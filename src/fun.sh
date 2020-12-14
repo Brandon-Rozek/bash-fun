@@ -361,6 +361,11 @@ revers() {
     echo "$result"
 }
 
+# Reverses a string
+revers_str() {
+    splitc | revers | list_join
+}
+
 # Removes multiple occurences of
 # a single character from the beginning
 # of the list.
